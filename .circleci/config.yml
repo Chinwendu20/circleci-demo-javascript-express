@@ -12,7 +12,7 @@ jobs:
     docker:
       - image: circleci/node:10.16.3
     steps:
-      - run: echo "hello world" > output.txt
+      - run: echo "hello world" > ./output.txt
       - persist_to_workspace:
           root: ./
           paths:
